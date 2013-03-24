@@ -1,0 +1,21 @@
+<DnaLibrary Name="ExcelCustomTaskPane-AddIn" RuntimeVersion="v4.0">
+  <Reference Path="FSharp.Core.dll" Pack="true"/>
+  <Reference Path="FSharpx.TypeProviders.Xaml.dll" Pack="true"/>
+  <ExternalLibrary Path="ExcelCustomTaskPane.dll" LoadFromBytes="true" Pack="true" />
+
+
+  <CustomUI>
+    <customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+      <ribbon>
+        <tabs>
+          <tab id="tab1" label="MyCTP">
+            <group id="SampleGroup" label="Claim Feed Panel">
+              <toggleButton id="ToggleCTPButton" onAction="OnToggleCTP" label="Show Panel" imageMso="ExchangeFolder" size="large"/>
+            </group>
+          </tab>
+        </tabs>
+      </ribbon>
+    </customUI>
+  </CustomUI>
+
+</DnaLibrary>
